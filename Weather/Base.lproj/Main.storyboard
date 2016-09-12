@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WF8-an-3F7" userLabel="BlackView">
+                                <rect key="frame" x="0.0" y="237" width="600" height="363"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="São Paulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vNr-QG-WGP">
+                                        <rect key="frame" x="0.0" y="10" width="600" height="177"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="90"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kG1-NS-KOV">
+                                        <rect key="frame" x="73" y="58" width="454" height="295"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="vNr-QG-WGP" firstAttribute="top" secondItem="WF8-an-3F7" secondAttribute="top" constant="10" id="4oJ-Mb-9Pv"/>
+                                    <constraint firstItem="vNr-QG-WGP" firstAttribute="width" secondItem="WF8-an-3F7" secondAttribute="width" id="Lcn-cG-fqG"/>
+                                    <constraint firstItem="kG1-NS-KOV" firstAttribute="centerX" secondItem="WF8-an-3F7" secondAttribute="centerX" id="YPH-mZ-euv"/>
+                                    <constraint firstAttribute="bottom" secondItem="kG1-NS-KOV" secondAttribute="bottom" constant="10" id="izO-rK-bP8"/>
+                                    <constraint firstItem="vNr-QG-WGP" firstAttribute="centerX" secondItem="WF8-an-3F7" secondAttribute="centerX" id="y1x-nv-xV4"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="c6J-bH-d4c">
+                                <rect key="frame" x="180" y="20" width="240" height="197"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WF8-an-3F7" firstAttribute="top" secondItem="c6J-bH-d4c" secondAttribute="bottom" constant="20" id="AxT-nw-4Fb"/>
+                            <constraint firstItem="c6J-bH-d4c" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="KCa-cn-AgL"/>
+                            <constraint firstItem="c6J-bH-d4c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KeF-Ly-43T"/>
+                            <constraint firstItem="WF8-an-3F7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="MfB-zH-dTJ"/>
+                            <constraint firstAttribute="trailing" secondItem="WF8-an-3F7" secondAttribute="trailing" id="Mgi-ed-G0h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WF8-an-3F7" secondAttribute="bottom" id="SVI-w4-rXu"/>
+                            <constraint firstItem="WF8-an-3F7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vix-NI-mFV"/>
+                            <constraint firstItem="c6J-bH-d4c" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="b9Y-mX-yfE"/>
+                            <constraint firstItem="c6J-bH-d4c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="d7c-vu-biC"/>
+                            <constraint firstItem="c6J-bH-d4c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gPd-pM-zoR"/>
+                            <constraint firstItem="c6J-bH-d4c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mVo-8N-OEn"/>
+                            <constraint firstItem="WF8-an-3F7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zrq-Lg-hYb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="b9Y-mX-yfE"/>
+                                <exclude reference="d7c-vu-biC"/>
+                                <exclude reference="mVo-8N-OEn"/>
+                                <exclude reference="MfB-zH-dTJ"/>
+                                <exclude reference="zrq-Lg-hYb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="KCa-cn-AgL"/>
+                                <exclude reference="KeF-Ly-43T"/>
+                                <include reference="b9Y-mX-yfE"/>
+                                <include reference="d7c-vu-biC"/>
+                                <exclude reference="gPd-pM-zoR"/>
+                                <include reference="mVo-8N-OEn"/>
+                                <exclude reference="AxT-nw-4Fb"/>
+                                <include reference="MfB-zH-dTJ"/>
+                                <exclude reference="Vix-NI-mFV"/>
+                                <include reference="zrq-Lg-hYb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="364"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud" width="300" height="197"/>
+    </resources>
+</document>
